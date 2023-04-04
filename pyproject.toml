@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "ml-projects"
+version = "0.1.0"
+description = ""
+authors = ["Stavros Niafas <sniafas@tuta.io>"]
+readme = "README.md"
+packages = [{include = "ml_projects"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+torch = [
+  {url = "https://download.pytorch.org/whl/cpu/torch-2.0.0%2Bcpu-cp39-cp39-linux_x86_64.whl", markers = "sys_platform == 'linux'"},
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
